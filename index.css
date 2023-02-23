@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+    background-color: hsl(0, 40%, 91%);
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+  border-radius: 15px;
+ overflow: hidden;
+ box-shadow: 5px 5px 10px hsla(0, 0%, 0%, 0.25);
+}
+.cars {
+  height: 500px;
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 25px 30px;
+  color: hsl(0, 0%, 95%);
+}
+.container .sedan {
+  background-color: hsl(31, 77%, 52%);
+}
+.container .suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+.container .luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+nav .sedan {
+  height: 50px;
+  width: 100px;
+}
+h1 {
+  font-size: 2.5rem;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+p {
+  font-size: 14px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: hsla(0, 0%, 100%, 0.75);
+  padding-right: 10px;
+  padding-bottom: 80px;
+}
+button {
+  border: none;
+  background-color: hsl(0, 0%, 95%);
+  font-size: 14px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.sedan-car {
+  color: hsl(31, 77%, 52%);
+}
+.sedan-car:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+  border: 1px solid hsl(0, 0%, 95%);
+}
+.suvs-car {
+  color: hsl(184, 100%, 22%);
+}
+.suvs-car:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+  border: 1px solid hsl(0, 0%, 95%);
+}
+.luxury-car {
+  color: hsl(179, 100%, 13%);
+}
+.luxury-car:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+  border: 1px solid hsl(0, 0%, 95%);
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+    margin: 20px 0;
+  }
+  .cars {
+    height: 100%;
+    width: 100%;
+    padding: 25px 30px;
+  }
+  .cars p {
+    padding-bottom: 0;
+  }
+  .cars button {
+    margin-top: 20px;
+  }
+}
